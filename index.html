@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IronPeak Fitness — a fictional demo gym. Strength, conditioning and group classes, plus a free BMI calculator.">
+  <title>IronPeak Fitness — Strength, Conditioning &amp; Classes</title>
+  <!--
+    DEMO PROJECT: IronPeak Fitness is a fictional gym created for a portfolio.
+    No real gym, trainers, members, or results are represented here.
+  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3" style="background-color: var(--coal) !important;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="logo-mark">💪</span>IRONPEAK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-ember btn-sm px-4 py-2" href="membership.html">Join Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-lg-8">
+        <span class="hero-badge">🔥 &nbsp;Fictional demo gym — portfolio project</span>
+        <h1 class="display-2 mt-4">Train hard.<br><span class="accent">Recover</span> harder.<br>Repeat.</h1>
+        <p class="lead text-white-50 mt-3" style="max-width: 560px;">IronPeak Fitness is a strength-first gym with expert coaches, 40+ classes a week and a community that actually shows up. Your first week is on us.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="membership.html" class="btn btn-ember">Start your free week →</a>
+          <a href="classes.html" class="btn btn-outline-light-soft">View class schedule</a>
+        </div>
+        <div class="row mt-5 g-3">
+          <div class="col-4"><div class="stat-num">40+</div><div class="stat-label">Classes every week</div></div>
+          <div class="col-4"><div class="stat-num">12</div><div class="stat-label">Certified coaches</div></div>
+          <div class="col-4"><div class="stat-num">5 AM–11 PM</div><div class="stat-label">Open every day</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ WHAT WE OFFER ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <p class="section-kicker mb-1">What we offer</p>
+      <h2 class="section-title">Everything you need. Nothing you don't.</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="card card-lift h-100 p-4">
+          <div class="icon-tile mb-3">🏋️</div>
+          <h5>Strength floor</h5>
+          <p class="text-muted mb-0">Platforms, racks, dumbbells to 50 kg and plate-loaded machines — never a queue for a squat rack.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+        <div class="card card-lift h-100 p-4">
+          <div class="icon-tile mb-3">🔥</div>
+          <h5>Group classes</h5>
+          <p class="text-muted mb-0">HIIT, spin, yoga, boxing and mobility — 40+ sessions a week, all levels welcome.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="card card-lift h-100 p-4">
+          <div class="icon-tile mb-3">🎯</div>
+          <h5>Personal coaching</h5>
+          <p class="text-muted mb-0">One-to-one programming, technique coaching and nutrition guidance from certified coaches.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+        <div class="card card-lift h-100 p-4">
+          <div class="icon-tile mb-3">🧖</div>
+          <h5>Recovery zone</h5>
+          <p class="text-muted mb-0">Sauna, cold plunge and stretching area — because progress happens between sessions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BMI CALCULATOR ============ -->
+<section class="section-pad bg-soft">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <p class="section-kicker mb-1">Free tool</p>
+        <h2 class="section-title">Know your starting point.</h2>
+        <p class="text-muted">Body Mass Index is a quick, rough guide to where your weight sits for your height. It takes ten seconds — and it helps our coaches point you to the right programme when you join.</p>
+        <p class="text-muted">BMI is only a starting point: it can't tell muscle from fat, so a high BMI in a very muscular person doesn't mean the same thing. Treat it as a guide, not a verdict.</p>
+      </div>
+      <div class="col-lg-7 reveal reveal-delay-1">
+        <div class="bmi-box p-4 p-md-5">
+          <h3 class="fw-bold mb-1">BMI Calculator</h3>
+          <p class="text-white-50 small mb-4">Pure JavaScript — your numbers never leave your browser.</p>
+          <form id="bmi-form" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="bmi-weight" class="form-label fw-semibold">Weight (kg) *</label>
+                <input type="number" id="bmi-weight" class="form-control" placeholder="e.g. 70" min="20" max="300" step="0.1" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="bmi-height" class="form-label fw-semibold">Height (cm) *</label>
+                <input type="number" id="bmi-height" class="form-control" placeholder="e.g. 175" min="100" max="250" step="0.1" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-ember w-100 mt-4 py-3">Calculate my BMI</button>
+          </form>
+          <div id="bmi-result" class="d-none mt-4 pt-4 border-top border-secondary"></div>
+          <p class="text-white-50 small mt-3 mb-0">Try it: 70 kg at 175 cm gives a BMI of about 22.9 — healthy weight.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED CLASSES PREVIEW ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 reveal">
+      <div>
+        <p class="section-kicker mb-1">This week</p>
+        <h2 class="section-title mb-0">Classes people love</h2>
+      </div>
+      <a href="classes.html" class="btn btn-outline-ember mt-3 mt-sm-0">Full schedule →</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal">
+        <div class="card card-lift h-100">
+          <img src="https://picsum.photos/seed/ironpeak-hiit/800/500" class="card-img-top class-img" alt="HIIT class training" loading="lazy">
+          <div class="card-body p-4">
+            <span class="chip">HIIT · 45 min</span>
+            <h5 class="mt-2">Peak Burn HIIT</h5>
+            <p class="text-muted">Intervals, sleds and battle ropes. High energy, scalable to any level.</p>
+            <p class="text-muted small mb-0">Mon / Wed / Fri · 6:30 AM &amp; 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-1">
+        <div class="card card-lift h-100">
+          <img src="https://picsum.photos/seed/ironpeak-yoga/800/500" class="card-img-top class-img" alt="Yoga class" loading="lazy">
+          <div class="card-body p-4">
+            <span class="chip">Mind &amp; body · 60 min</span>
+            <h5 class="mt-2">Power Flow Yoga</h5>
+            <p class="text-muted">Strength-based vinyasa that builds mobility and control, not just flexibility.</p>
+            <p class="text-muted small mb-0">Tue / Thu / Sun · 7:00 AM &amp; 7:30 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 reveal reveal-delay-2">
+        <div class="card card-lift h-100">
+          <img src="https://picsum.photos/seed/ironpeak-boxing/800/500" class="card-img-top class-img" alt="Boxing class" loading="lazy">
+          <div class="card-body p-4">
+            <span class="chip">Combat · 60 min</span>
+            <h5 class="mt-2">Boxing Fundamentals</h5>
+            <p class="text-muted">Footwork, bag work and pad drills. No experience needed, gloves provided.</p>
+            <p class="text-muted small mb-0">Tue / Sat · 6:00 PM &amp; 10:00 AM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="pb-5">
+  <div class="container">
+    <div class="cta-band p-5 text-center reveal">
+      <h2 class="fw-bold">Your first week is free.</h2>
+      <p class="mb-4 opacity-75">Full access — gym floor, classes, sauna. No card required, no strings.</p>
+      <a href="membership.html" class="btn btn-light btn-lg rounded-pill px-5 fw-bold">Claim your free week →</a>
+      <p class="mt-3 mb-0 small opacity-75">Open daily 5:00 AM – 11:00 PM · Staffed 6:00 AM – 9:00 PM</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6 class="fw-bold">💪 IronPeak Fitness</h6>
+        <p class="small">A fictional demo gym built as a portfolio project. Not a real business — no real memberships are sold here.</p>
+      </div>
+      <div class="col-md-2">
+        <h6>Explore</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Opening hours</h6>
+        <ul class="list-unstyled small">
+          <li>Mon – Sun: 5:00 AM – 11:00 PM</li>
+          <li>Staffed: 6:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Contact (fictional)</h6>
+        <ul class="list-unstyled small">
+          <li>456 Demo Avenue, Glassboro, NJ</li>
+          <li>(555) 987-6543</li>
+          <li>hello@ironpeak-demo.example</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="small text-center mb-0">© <span id="year"></span> IronPeak Fitness — fictional demo project. Built with HTML, CSS, JavaScript &amp; Bootstrap 5. No backend.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IronPeak Fitness membership plans and pricing — fictional demo prices, plus a demo-mode join enquiry form.">
+  <title>Membership — IronPeak Fitness</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3" style="background-color: var(--coal) !important;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="logo-mark">💪</span>IRONPEAK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="membership.html">Membership</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-ember btn-sm px-4 py-2" href="membership.html">Join Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5" style="background: var(--coal); color: #fff;">
+  <div class="container">
+    <p class="section-kicker mb-1">Membership</p>
+    <h1 class="display-5 fw-bold">Simple pricing. No joining fee.</h1>
+    <p class="lead text-white-50" style="max-width: 640px;">Three plans, month-to-month, cancel anytime. Prices below are fictional demo prices for this portfolio project — and every plan starts with a free week.</p>
+  </div>
+</header>
+
+<!-- ============ PLANS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-4 reveal">
+        <div class="card card-lift h-100 p-4">
+          <h5>Essential</h5>
+          <p class="text-muted small">For the self-sufficient lifter.</p>
+          <p class="mt-3"><span class="price-tag">$29<small>/month</small></span></p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2">✓ &nbsp;Full gym floor access</li>
+            <li class="mb-2">✓ &nbsp;Open hours 5 AM – 11 PM</li>
+            <li class="mb-2">✓ &nbsp;Locker room &amp; showers</li>
+            <li class="mb-2">✗ &nbsp;Group classes</li>
+            <li class="mb-2">✗ &nbsp;Sauna &amp; recovery zone</li>
+          </ul>
+          <a href="#join" class="btn btn-outline-ember w-100 mt-auto">Choose Essential</a>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal reveal-delay-1">
+        <div class="card card-lift plan-popular h-100 p-4">
+          <span class="plan-badge">Most popular</span>
+          <h5>Plus</h5>
+          <p class="text-muted small">The full IronPeak experience.</p>
+          <p class="mt-3"><span class="price-tag">$49<small>/month</small></span></p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2">✓ &nbsp;Everything in Essential</li>
+            <li class="mb-2">✓ &nbsp;Unlimited group classes</li>
+            <li class="mb-2">✓ &nbsp;Sauna &amp; recovery zone</li>
+            <li class="mb-2">✓ &nbsp;Monthly fitness assessment</li>
+            <li class="mb-2">✓ &nbsp;Guest pass once a month</li>
+          </ul>
+          <a href="#join" class="btn btn-ember w-100 mt-auto">Choose Plus</a>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal reveal-delay-2">
+        <div class="card card-lift h-100 p-4">
+          <h5>All-Access</h5>
+          <p class="text-muted small">Coaching, nutrition and everything.</p>
+          <p class="mt-3"><span class="price-tag">$99<small>/month</small></span></p>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2">✓ &nbsp;Everything in Plus</li>
+            <li class="mb-2">✓ &nbsp;2 personal training sessions / month</li>
+            <li class="mb-2">✓ &nbsp;Nutrition plan &amp; check-ins</li>
+            <li class="mb-2">✓ &nbsp;Priority class booking</li>
+            <li class="mb-2">✓ &nbsp;Bring a guest anytime</li>
+          </ul>
+          <a href="#join" class="btn btn-outline-ember w-100 mt-auto">Choose All-Access</a>
+        </div>
+      </div>
+    </div>
+    <p class="text-muted small text-center mt-4">All plans month-to-month, cancel anytime, no joining fee. First week free on every plan.</p>
+
+    <!-- ============ JOIN / ENQUIRY FORM (DEMO MODE) ============ -->
+    <div class="row justify-content-center mt-5" id="join">
+      <div class="col-lg-7 reveal">
+        <div class="card card-lift p-4 p-md-5">
+          <h3 class="section-title">Start your free week</h3>
+          <p class="text-muted">Tell us which plan you're interested in and we'll be in touch. <strong>This form runs in demo mode</strong> — there is no backend, so nothing is sent or stored; you'll see a labelled demo confirmation instead.</p>
+          <form id="join-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="join-name" class="form-label fw-semibold">Full name *</label>
+                <input type="text" id="join-name" class="form-control" placeholder="e.g. Alex Morgan" minlength="2" maxlength="80" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="join-email" class="form-label fw-semibold">Email *</label>
+                <input type="email" id="join-email" class="form-control" placeholder="you@example.com" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="join-plan" class="form-label fw-semibold">Plan *</label>
+                <select id="join-plan" class="form-select" required>
+                  <option value="" selected disabled>Choose a plan…</option>
+                  <option>Essential — $29/month</option>
+                  <option>Plus — $49/month</option>
+                  <option>All-Access — $99/month</option>
+                </select>
+                <div class="invalid-feedback">Please choose a plan.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="join-goal" class="form-label fw-semibold">Main goal <span class="text-muted fw-normal">(optional)</span></label>
+                <select id="join-goal" class="form-select">
+                  <option value="" selected>Choose a goal…</option>
+                  <option>Build strength</option>
+                  <option>Lose weight</option>
+                  <option>Improve fitness</option>
+                  <option>Learn boxing</option>
+                  <option>Just trying it out</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-ember w-100 mt-4 py-3">Claim my free week</button>
+            <p class="text-muted small text-center mt-3 mb-0">Demo form — no data leaves your browser.</p>
+          </form>
+          <div id="join-result" class="d-none" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ FAQ ============ -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 reveal">
+        <h3 class="section-title text-center mb-4">Common questions</h3>
+        <div class="accordion" id="faq">
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">How does the free week work?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body text-muted">Seven days of full access to the plan you choose — gym floor, classes, sauna. No card details are taken and nothing renews automatically.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Can I cancel anytime?</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body text-muted">Yes — all plans are month-to-month. Cancel from your account or at reception and your access runs to the end of the paid month.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">I've never trained before. Is this gym for me?</button></h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body text-muted">Absolutely. Every plan starts with a free induction, classes are labelled by level, and coaches are on the floor to help. Most members started as complete beginners.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Do you offer student or family discounts?</button></h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body text-muted">Yes — students get 15% off Plus and All-Access with a valid student ID, and a second family member joins at half price. Ask at reception for details.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6 class="fw-bold">💪 IronPeak Fitness</h6>
+        <p class="small">A fictional demo gym built as a portfolio project. Not a real business — no real memberships are sold here.</p>
+      </div>
+      <div class="col-md-2">
+        <h6>Explore</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Opening hours</h6>
+        <ul class="list-unstyled small">
+          <li>Mon – Sun: 5:00 AM – 11:00 PM</li>
+          <li>Staffed: 6:00 AM – 9:00 PM</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6>Contact (fictional)</h6>
+        <ul class="list-unstyled small">
+          <li>456 Demo Avenue, Glassboro, NJ</li>
+          <li>(555) 987-6543</li>
+          <li>hello@ironpeak-demo.example</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="small text-center mb-0">© <span id="year"></span> IronPeak Fitness — fictional demo project. Built with HTML, CSS, JavaScript &amp; Bootstrap 5. No backend.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
