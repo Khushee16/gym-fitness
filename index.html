@@ -15,17 +15,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <!-- ============ NAVBAR ============ -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3" style="background-color: var(--coal) !important;">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><span class="logo-mark">💪</span>IRONPEAK</a>
+    <a class="navbar-brand" href="index.html"><span class="logo-mark" aria-hidden="true">💪</span>IRONPEAK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
         <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
         <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
@@ -36,7 +37,7 @@
 </nav>
 
 <!-- ============ HERO ============ -->
-<header class="hero">
+<header class="hero" id="main">
   <div class="container position-relative">
     <div class="row">
       <div class="col-lg-8">
@@ -124,7 +125,7 @@
             </div>
             <button type="submit" class="btn btn-ember w-100 mt-4 py-3">Calculate my BMI</button>
           </form>
-          <div id="bmi-result" class="d-none mt-4 pt-4 border-top border-secondary"></div>
+          <div id="bmi-result" role="status" aria-live="polite" class="d-none mt-4 pt-4 border-top border-secondary"></div>
           <p class="text-white-50 small mt-3 mb-0">Try it: 70 kg at 175 cm gives a BMI of about 22.9 — healthy weight.</p>
         </div>
       </div>

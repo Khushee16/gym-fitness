@@ -33,13 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (filterBtns.length && classCards.length) {
     filterBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
-        filterBtns.forEach((b) => b.classList.remove("active"));
+        filterBtns.forEach((b) => { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         const wanted = btn.dataset.filter;
         classCards.forEach((card) => {
           const show = wanted === "all" || card.dataset.category === wanted;
           card.style.display = show ? "" : "none";
         });
+        var live = document.getElementById("filter-status");
+        if (live) { var n = 0; classCards.forEach(function(c){ if (c.style.display !== "none") n++; }); live.textContent = "Showing " + n + " class" + (n === 1 ? "" : "es") + "."; }
       });
     });
   }
@@ -130,3 +133,27 @@ function bmiCategory(bmi) {
   if (bmi < 30) return { label: "Overweight", color: "#facc15", advice: "Above the healthy range — our coaches can build a plan that fits your routine." };
   return { label: "Obese", color: "#ef4444", advice: "Well above the healthy range — talk to a trainer (and your doctor) about a safe plan." };
 }
+
+/* Polish upgrade: reduced-motion-safe reveals, back-to-top, stagger */
+(function () {
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.addEventListener("DOMContentLoaded", function () {
+    var els = document.querySelectorAll(".reveal-left,.reveal-right,.reveal-zoom");
+    if (reduced || !("IntersectionObserver" in window)) {
+      els.forEach(function (el) { el.classList.add("visible"); });
+      document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("visible"); });
+    } else {
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("visible"); io2.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io2.observe(el); });
+    }
+    var btn = document.createElement("button");
+    btn.id = "back-to-top"; btn.type = "button";
+    btn.setAttribute("aria-label", "Back to top");
+    btn.textContent = "\u2191";
+    btn.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" }); });
+    document.body.appendChild(btn);
+    window.addEventListener("scroll", function () { btn.classList.toggle("show", window.scrollY > 600); }, { passive: true });
+  });
+})();

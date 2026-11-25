@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top py-3" style="background-color: var(--coal) !important;">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><span class="logo-mark">💪</span>IRONPEAK</a>
+    <a class="navbar-brand" href="index.html"><span class="logo-mark" aria-hidden="true">💪</span>IRONPEAK</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="classes.html">Classes</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="classes.html">Classes</a></li>
         <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
         <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
         <li class="nav-item ms-lg-2"><a class="btn btn-ember btn-sm px-4 py-2" href="membership.html">Join Now</a></li>
@@ -38,16 +39,17 @@
   </div>
 </header>
 
-<section class="section-pad">
+<section class="section-pad" id="main">
   <div class="container">
     <!-- FILTER -->
     <div class="d-flex flex-wrap gap-2 mb-4 reveal" role="group" aria-label="Filter classes">
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn active" data-filter="all">All classes</button>
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="hiit">HIIT</button>
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="strength">Strength</button>
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="mind-body">Mind &amp; Body</button>
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="combat">Combat</button>
-      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="cardio">Cardio</button>
+      <p id="filter-status" class="visually-hidden" role="status" aria-live="polite"></p>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn active" data-filter="all" aria-pressed="true">All classes</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="hiit" aria-pressed="false">HIIT</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="strength" aria-pressed="false">Strength</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="mind-body" aria-pressed="false">Mind &amp; Body</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="combat" aria-pressed="false">Combat</button>
+      <button type="button" class="btn btn-outline-dark rounded-pill filter-btn" data-filter="cardio" aria-pressed="false">Cardio</button>
     </div>
 
     <!-- CLASS CARDS -->
